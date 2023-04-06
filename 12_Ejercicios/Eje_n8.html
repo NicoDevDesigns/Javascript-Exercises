@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Document</title>    
+    
+</head>
+
+<body>
+<h1>Ejercicios de programacion en JavaScript</h1>
+<script>
+    //Ejercicio para eliminar una palabra de un texto
+
+    const eliminarTexto = (texto="",palabra="")=>
+    {
+        (!texto)?console.warn("No ingresaste texto"):(!palabra)?console.warn("No ingresaste palabra"):console.info(texto.replace(new RegExp(palabra,"ig"),""));
+    }
+    eliminarTexto();
+    eliminarTexto("Hola mundo","u");
+    eliminarTexto("Hola nico como estas, como estuvo tu dia","o");
+
+</script>
+</body>
+</html> 

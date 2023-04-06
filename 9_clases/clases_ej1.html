@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Fudandamentos JavaScript</title>    
+</head>
+<body>
+    <h1>Fundamentos JavaScript</h1>
+    <ul>
+        <li>Primavera</li>
+        <li>Verano</li>
+        <li>Otoño</li>
+        <li>Invierno</li> 
+    </ul>
+    <script>
+        class Animal {
+            constructor(nombre,genero){
+                this.nombre=nombre;
+                this.genero=genero;
+            }
+            sonar(){
+                console.log("Hago ruidos");
+            }
+            saludar(){
+                console.log("Hola como estas")
+            }   
+        }
+        class Perro extends Animal{
+            constructor(nombre,genero,tamanio){
+                //con el metodo super se manda a llamar el constructor de la clase padre
+                super(nombre,genero);
+                this.tamanio=tamanio;
+            }
+            sonar(){
+                console.log("Soy un perro")
+            }
+            ladrar(){
+                console.log("Guauu");
+            }
+        }
+        const mailo = new Animal("Mailo","Macho");
+        const michi = new Animal("Michi","Hembra");
+        console.log(mailo);
+        const nazareno = new Perro("Nazareno","Macho","Grande");
+        console.log(nazareno);
+
+    </script>
+</body>
+</html>

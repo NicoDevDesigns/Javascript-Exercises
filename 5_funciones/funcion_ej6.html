@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ejercicios de funciones JS</title>
+</head>
+<body>
+    <h1>Ejercicio de funcion</h1>
+    <script>
+        let multiplicar = function(x,y){
+            return x*y;
+        }
+        let exponencial = function(x,y){
+            return Math.pow(x,y);
+        }
+        let suma = (x,y)=>{ return x+y};
+        let resta = (x,y)=>{return x-y};
+
+        let resultado = multiplicar(5,2);
+        alert(resultado);
+        resultado = exponencial(2,4);
+        alert(resultado);
+        resultado = suma(2,2);
+        alert(resultado);
+        resultado = resta(6,1);
+        alert(resultado);
+    </script>
+    
+</body>
+</html>

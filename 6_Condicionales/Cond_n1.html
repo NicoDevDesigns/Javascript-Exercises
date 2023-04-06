@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta content="text/html; charset= utf-8">
+    <title>Ejercicio condicionales Nº1</title>
+    <script>
+        let nota1,nota2,nota3;
+        let dato1,dato2,dato3,media,resultado;
+
+        dato1 = window.prompt("primer numero: ","0");
+        nota1 = parseInt(dato1);
+        dato2 = window.prompt("segundo numero: ","0");
+        nota2 = parseInt(dato2);
+        dato3 = window.prompt("tercer numero: ","0");
+        nota3 = parseInt(dato3);
+
+        media = (nota1+nota2+nota3)/3;
+        if(media<5){
+            resultado = "Desaprobado";
+        }else{
+            resultado = "Aprobado";
+        }
+        document.write(`<h3>La nota  final es ${resultado} y la media es: ${media}</h3>`)
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

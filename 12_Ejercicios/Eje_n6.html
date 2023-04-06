@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Document</title>    
+    
+</head>
+
+<body>
+<h1>Ejercicios de programacion en JavaScript</h1>
+<script>
+    //Ejercicio que cuenta las veces que aparece una palabra
+    const contarTexto = (cadena ="",texto="")=>
+     {
+        if(!cadena) return console.warn("No ingresaste una cadena");
+
+        if(!texto) return console.warn("No ingresaste un palabra a buscar");
+
+        let i=0;
+        let contador=0;
+        while (i!==-1) {
+            i=cadena.indexOf(texto,i);
+            console.log(i);
+            if(i!==-1)
+            {
+                i++;
+                contador++;
+            }   
+        }
+        return console.info(`La palabra ${texto} se repite ${contador} veces`);
+     }
+    contarTexto();
+    contarTexto("Hola mundo,como estas mundo","mundo");
+</script>
+</body>
+</html> 

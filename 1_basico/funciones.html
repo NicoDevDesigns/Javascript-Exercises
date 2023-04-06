@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Fudandamentos JavaScript</title>    
+</head>
+<body>
+    <h1>Fundamentos JavaScript</h1>
+    <ul>
+        <li>Primavera</li>
+        <li>Verano</li>
+        <li>Otoño</li>
+        <li>Invierno</li> 
+    </ul>
+    <script>
+        function funcion1(){
+            console.log("Hola mundo");
+            console.log("Nico")
+        }
+        funcion1();
+        funcion1();
+        function funcion2(){
+            return "Hola nico";
+        }
+        let valor = funcion2();
+        console.log(valor);
+        function funcion3()
+        {
+            let valor1 = 5;
+            let valor2 = 6;
+            return valor1+valor2;
+        }
+        console.log(funcion3());
+        let valorRetornado = funcion3();
+        console.log(valorRetornado);
+
+        function funcion4(nombre,edad)
+        {
+            console.log(`Mi nombre es ${nombre} y mi edad es ${edad}`)
+        }
+        funcion4("Nico",35);
+
+        function funcion5(codigo = 76,nombre = "Nico")
+        {
+            console.log(`El codigo es ${codigo} y el nombre ${nombre}`)
+        }
+        console.log(funcion5());
+        const funcionExpresada = function()
+        {
+            console.log("Funcion expresada")
+        }
+        funcionExpresada();
+
+       
+
+
+    </script>
+</body>
+</html>

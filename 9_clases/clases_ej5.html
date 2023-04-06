@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ejercicios JS</title>
+</head>
+<body>
+    <h1>Ejercicio de clases</h1>
+    <script>
+        class Abuelo {
+            constructor(nombre,edad){
+                this.nombre=nombre;
+                this.edad=edad;
+            }
+            saludar(){
+                document.write("Hola Nico soy el abuelo");
+            }
+
+        }
+        class padre extends Abuelo{
+            constructor(nombre,edad,altura){
+                super(nombre,edad)
+                this.altura=altura;
+            }
+            saludar(){
+                document.write("Hole leo soy el padre");
+            }
+        }
+        const nico = new Abuelo("Nico",36);
+        document.write(nico.nombre);
+        nico.saludar();
+        const leo = new padre("Leo", 35,176);
+        document.write(leo.nombre);
+        leo.saludar();
+
+    </script>
+    
+</body>
+</html>

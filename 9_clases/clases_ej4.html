@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Fudandamentos JavaScript</title>    
+</head>
+<body>
+    <h1>Fundamentos JavaScript</h1>
+    <ul>
+        <li>Primavera</li>
+        <li>Verano</li>
+        <li>Otoño</li>
+        <li>Invierno</li> 
+    </ul>
+    <script>
+        class padre
+        {
+            constructor(nombre,cuenta)
+            {
+                this.nombre = nombre;
+                this.cuenta = cuenta;
+            }
+            saludo()
+            {
+                console.log("Bienvenidos a mi pagina")
+            }
+        }
+        class hijo extends padre
+        {
+            constructor(nombre,cuenta,password)
+            {
+                super(nombre,cuenta);
+                this.password=password;
+            }
+
+        }
+        const nico = new hijo("Nico",2020,555);
+        console.log(nico);
+
+    </script>
+</body>
+</html>

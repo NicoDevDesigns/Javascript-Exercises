@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Fudandamentos JavaScript</title>    
+</head>
+<body>
+    <h1>Fundamentos JavaScript</h1>
+    <ul>
+        <li>Primavera</li>
+        <li>Verano</li>
+        <li>Otoño</li>
+        <li>Invierno</li> 
+    </ul>
+    <script>
+
+        //funciones
+        function calculo(val1,val2)
+        {
+            let valorFinal;
+            valorFinal = val1+val2;
+            return valorFinal;
+        }
+        let ResultadoCalculo = calculo(40,45);
+        console.log("El valor del resultado de la funcion es: ",ResultadoCalculo);
+
+        //Arreglos
+
+        const frutas = ["manzana","banana","pera"];
+        console.log(frutas);
+        const animales = ["gato","perro","loro","hamster","lobo"];
+        console.log("los animales: ",animales);
+        
+
+       
+
+        //Operadores
+        let suma = 10+20;
+        console.log(suma);
+        let calculo2 = (10-30)*5;
+        console.log(calculo2);
+
+ 
+        //condicionales
+        let val3 = 9;
+        if(val3>10)
+        {
+            console.log("El valor es mayor a 10");
+        }else console.log("No es mayor");
+
+        //Objetos literal
+        let nombre = "Nico";
+        let edad = 36;
+        const usuario = {
+            nombre:nombre,
+            edad:edad,
+            entrenar(){
+                console.log("Hago ejercicio")
+            }
+        };
+        console.log(usuario);
+        const gato = {
+            nombre: "Michi",
+            color: "Blanco y Marron",
+            QueHace(){
+                console.log("Miauuu")
+            }
+        };
+        console.log(gato);
+
+        //Prototipos
+        function auto(color){
+            this.color = color;
+        }
+        auto.prototype.bocina = function(){
+            console.log("Suena la bocina");
+        }
+        const miAuto = new auto("Azul");
+        console.log(miAuto);
+        miAuto.bocina();
+
+
+
+
+
+
+    </script>
+</body>
+</html>

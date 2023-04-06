@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Fudandamentos JavaScript</title>    
+</head>
+<body>
+    <h1>Fundamentos JavaScript</h1>
+    <ul>
+        <li>Primavera</li>
+        <li>Verano</li>
+        <li>Otoño</li>
+        <li>Invierno</li> 
+    </ul>
+    <script>
+        let nombre = "Nico"
+        let apellido = "Sanchez"
+
+        let saludo = "Hola soy"+" " + nombre + " " + apellido + "."
+        console.log(saludo)
+        //template string
+
+        let saludo2 = `Hola otra vez soy ${nombre}${apellido}`;
+        console.log(saludo2);
+        let ul = "<ul><li>Primavera</li><li>Verano</li><li>Otoño</li><li>Invierno</li></ul>"
+        console.log(ul)
+        //template string
+        let ul2 = `
+        <ul>
+            <li>Primavera</li>
+            <li>Verano</li>
+            <li>Otoño</li>
+            <li>Invierno</li> 
+        </ul>`
+        console.log(ul2)
+        let ul3 = "<ul>"
+        ul3+="<li>Primavera</li>"
+        console.log(ul3)
+
+        let texto = `
+            hola mundo 
+                soy nico
+        `;
+        console.log(texto);
+    
+
+
+    </script>
+</body>
+</html>

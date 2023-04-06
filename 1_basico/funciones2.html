@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Fudandamentos JavaScript</title>    
+</head>
+<body>
+    <h1>Fundamentos JavaScript</h1>
+    <ul>
+        <li>Primavera</li>
+        <li>Verano</li>
+        <li>Otoño</li>
+        <li>Invierno</li> 
+    </ul>
+    <script>
+        //funciones declaradas
+        function bienvenida()
+        {
+            console.log("bienvenidos a mi mundo!!!");
+        }
+        bienvenida();
+        function suma(valor1,valor2)
+        {
+            return valor1+valor2;
+        }
+        let resultado = suma(5,6);
+        console.log(resultado);
+        
+        //funciones expresadas
+
+        const saludo = function()
+        {
+            console.log("Hola esto es una funcion expresada");
+        }
+        saludo();
+        const registro = function(nombre,apellido)
+        {
+            console.log(nombre);
+            console.log(apellido);
+        }
+        registro("Nicolas","Sanchez");
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Fudandamentos JavaScript</title>    
+</head>
+<body>
+    <h1>Fundamentos JavaScript</h1>
+    <ul>
+        <li>Primavera</li>
+        <li>Verano</li>
+        <li>Otoño</li>
+        <li>Invierno</li> 
+    </ul>
+    <script>
+        const datos=[2,5,7];
+        const [primero,segundo,tercero]=datos;
+        console.log(primero,segundo,tercero);
+        const hermanos=["Nico","Leo"];
+        const [mayor,menor]=hermanos;
+        console.log(mayor,menor);
+
+        //objeto
+        const registro={
+            nombre:"Nico",
+            Apellido:"Sanchez",
+            edad:36
+        };
+        const {nombre,Apellido,edad}=registro;
+        console.log(nombre,edad,Apellido);
+
+
+
+    </script>
+</body>
+</html>

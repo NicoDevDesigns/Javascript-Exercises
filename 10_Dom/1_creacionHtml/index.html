@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM con javascript</title>
+</head>
+<body>
+    <h1 id="titulo">Iniciando html con javascript</h1>
+    <h2 id="titulo2">La voluntad es mas fuerte que la inteligencia</h2>
+    <p id="parrafo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus voluptatem rem, soluta fuga earum corporis delectus dolores ratione sapiente ex?</p>
+    <p id="nuevoParrafo">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit molestiae perspiciatis eius earum ipsum quaerat ducimus, error ex beatae vitae.</p>
+    <script>
+        let titulo = document.getElementById("titulo").innerHTML;
+        console.log("El valor del titulo es: "+titulo);
+        let parrafo = document.getElementById("parrafo");
+        console.log("El valor del parrafo es: "+parrafo.innerHTML);
+        let tituloNuevo= document.getElementById("titulo2");
+        console.log(`El nuevo titulo es: ${tituloNuevo.innerHTML}`);
+        let nuevoP = document.getElementById("nuevoParrafo");
+        nuevoP.innerHTML="El proposito de la vida es el desarrollo personal"
+
+        console.log("Hola mundo soy Nico")
+    </script>
+    
+</body>
+</html>

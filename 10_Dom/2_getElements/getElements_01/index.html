@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .azul{
+            color: blue;
+        }
+    </style>
+    <title>Trabajando con getElements</title>
+</head>
+<body>
+    <h1 class="azul">Ejercicios con get elements</h1>
+    <p id="parrafo1" class="azul">Perseverancia Nico</p>
+    <p id="parrafo2" class="azul">La redPill no es facil pero veras el mundo otra vez</p>
+    <script>
+        let parrafos = document.getElementsByTagName("p");
+        console.log(`Nº parrafos: ${parrafos.length}`);
+        for(let i=0;i<parrafos.length;i++){
+            console.log(`i:${i} - - ${parrafos[i].innerHTML}`);
+        }
+        let elementos = document.getElementsByClassName("azul");
+        console.log(`Nº parrafos: $ elementos.length}`);
+        for(let elemento of elementos){
+            console.log(elemento.innerHTML);
+        }
+        let elementos2=document.querySelectorAll("h1.azul");
+        console.log(elementos2.innerHTML);
+    </script>
+</body>
+</html>

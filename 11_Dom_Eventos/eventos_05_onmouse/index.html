@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM en javascript onmouseover y onmouseover/onmouseout</title>
+</head>
+<body>
+    <h1 id="titulo" onmouseover="rojo(this)" onmouseout="verde(this)">Manejo de DOM con javascript</h1>
+    <h2 id="titulo2"onmousedown="azul(this)" onmouseup="violeta(this)">Manejo de DOM onmouse</h2>
+    
+    <script>
+        function rojo(titulo){
+            titulo.style.color="red";
+        }
+        function verde(titulo){
+            titulo.style.color="green";
+        }
+        function azul(titulo2){
+            titulo2.style.color="blue";
+        }
+        function violeta(titulo2){
+            titulo2.style.color="violet";
+        }
+    </script>
+</body>
+</html>

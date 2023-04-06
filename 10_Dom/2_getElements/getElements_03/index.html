@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM cambio de imagen</title>
+</head>
+<body>
+    <h1>Cambio de imagen por otra</h1>
+    <button onclick="mostrar()">Presionar</button>
+    <img id="imagen" src="https://elcomercio.pe/resizer/5dsSiGYyyepagy8TjqqxOIMkUkE=/1200x900/smart/filters:format(jpeg):quality(75)/cloudfront-us-east-1.images.arcpublishing.com/elcomercio/J2P5MGYGVBBHPISNEAGX6KU6V4.jpg" alt="goku">
+
+    <script>
+        function mostrar(){
+            document.getElementById('imagen').src="https://www.egames.news/__export/1626646797248/sites/debate/img/2021/07/18/copia_de_egames_-_2021-07-18t161743_535.jpg_1753094345.jpg"
+        }
+    </script>
+</body>
+</html>

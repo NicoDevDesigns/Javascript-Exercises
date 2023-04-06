@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Fudandamentos JavaScript</title>    
+</head>
+<body>
+    <h1>Fundamentos JavaScript</h1>
+    <script>
+        var hola= "Hola mundo";
+        let hello = "Hello World";
+        console.log(hola);
+        console.log(hello);
+        console.log(window);
+        console.log(window.hola);
+        console.log(window.hello);
+        //var
+        console.log("********var***********")
+        var musica = "Rock";
+        console.log("fuera del bloque",musica)
+        {
+            var musica = "Pop"
+            console.log("bloque",musica)
+        }
+        console.log("La variable musica es: ",musica)
+        console.log("*********let***************")
+        let musica2 = "Tango";
+        console.log("Fuera del bloque",musica2)
+        {
+            let musica2 = "Folclore";
+            console.log("Dentro del bloque",musica2);
+        }
+        console.log("Fuera del bloque again",musica2)
+        console.log("*********variable constante********");
+
+        const PI = 3.1415
+        console.log(PI)
+
+        let objeto = {
+            nombre : "Nico",
+            edad : 35
+        }
+        console.log(objeto)
+        let array = ["LEo","Fabian","ALejandro"]
+        console.log(array)
+        var num1 = 36;
+        var num2 = 3;
+
+        if((num1/num2)>12) {
+            console.log("Puedo dividirlo")
+            }else{
+                console.log("No puedo dividirlo")
+}
+
+
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ejercicios JS</title>
+</head>
+<body>
+    <h1>Ejercicio de clases</h1>
+    <script>
+        class animal{
+            constructor(nombre){
+                this.nombre=nombre;
+                this._edad=0;
+            }
+            get edad(){
+                return this._edad;
+            }
+            set edad(valor){
+                if(valor<0){
+                    alert("Eso no es posible");
+                }
+                this._edad=valor;
+            }
+            verNombre(){
+                console.log("Yo soy "+this.nombre);
+            }
+        }
+        const objetoAnimal = new animal("elefante");
+        objetoAnimal.verNombre();
+        objetoAnimal.edad=36;
+        console.log(objetoAnimal.edad);
+    </script>
+    
+</body>
+</html>

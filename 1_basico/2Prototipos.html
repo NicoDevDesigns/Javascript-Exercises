@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Fudandamentos JavaScript</title>    
+</head>
+<body>
+    <h1>Fundamentos JavaScript</h1>
+    <ul>
+        <li>Primavera</li>
+        <li>Verano</li>
+        <li>Otoño</li>
+        <li>Invierno</li> 
+    </ul>
+    <script>
+        //funcion constructora
+        function ropa(talle,color){
+            //atributos
+            this.talle = talle;
+            this.color = color;
+            //metodo
+            this.QueHace = function(){
+                console.log("No se moja")
+            }
+        }
+        const CamisasHot = new ropa(42,"Rojo");
+        console.log(CamisasHot);
+        //funcion constructora sin metodos
+        function departamento(ambiente,precio){
+            this.ambiente=ambiente;
+            this.precio=precio;
+        }
+        //metodo agregado al prototipo
+        departamento.prototype.comodo = function(){
+            console.log("Es comodo");
+        }
+        const miDept = new departamento(1,1300);
+        console.log(miDept);
+        miDept.comodo();
+
+        
+
+    </script>
+</body>
+</html>

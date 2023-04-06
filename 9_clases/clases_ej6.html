@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ejercicios JS</title>
+    <script>
+        class ficha{
+            constructor(){
+                this.alumno = {
+                    nombre : "Nico Sanchez",
+                    edad: 36
+                };   
+            }//fin de constructor
+            verNombre(){
+                return this.alumno.nombre;
+            }
+            verEdad(){
+                let resultado = this.alumno.edad;
+                return resultado;
+            }
+        }//fin ficha
+        function programa(){
+            var obj = new ficha();
+            document.writeln(`El nombre es: ${obj.verNombre()}<br>`);
+            document.writeln(`La edad es: ${obj.verEdad()}<br>`);
+        }
+    </script>
+</head>
+<body>
+    <h1>Ejercicios de clases</h1>
+    <input type="button" value="Pulsar aqui" onclick="programa()">
+</body>
+</html>

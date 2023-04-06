@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Document</title>    
+    
+</head>
+
+<body>
+<h1>Ejercicios de programacion en JavaScript</h1>
+<script>
+    //Ejercicio para determinar si una palabra se lee igual al reves
+    const palindromo = (palabra="")=>
+     {
+         if(!palabra) return console.warn("No ingresaste una palabra")
+         palabra=palabra.toLowerCase();
+         let alReves = palabra.split("").reverse().join("");
+
+         return (palabra===alReves)
+         ?console.info(`Si, la palabra ${palabra} es igual al reves ${alReves}`)
+         :console.info(`No es, la palabra ${palabra} no es igual al reves ${alReves}`);
+     }
+     palindromo();
+     palindromo("");
+     palindromo("nico");
+     palindromo("Leo");
+     palindromo("SaLas");
+
+</script>
+</body>
+</html> 

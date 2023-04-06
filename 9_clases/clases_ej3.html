@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Fudandamentos JavaScript</title>    
+</head>
+<body>
+    <h1>Fundamentos JavaScript</h1>
+    <ul>
+        <li>Primavera</li>
+        <li>Verano</li>
+        <li>Otoño</li>
+        <li>Invierno</li> 
+    </ul>
+    <script>
+        class datos
+        {
+            constructor(cuenta,diasVacas)
+            {
+                this.cuenta=cuenta;
+                this.diasVacas=diasVacas;
+            }
+            saldo()
+            {
+                console.log("Tiene la cuentas en orden!");
+            }
+        }
+        class registro extends datos
+        {
+            constructor(cuenta,diasVacas,salud)
+            {
+                super(cuenta,diasVacas);
+                this.salud=salud;
+            }
+            //metodo
+            saludo()
+            {
+                console.log("buenas noches nicolas");
+            }
+        }
+        const nico = new registro(2000,20,"Buena salud");
+        console.log(nico);
+
+
+    </script>
+</body>
+</html>
